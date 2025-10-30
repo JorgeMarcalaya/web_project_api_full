@@ -1,0 +1,99 @@
+.elements {
+  width: 882px;
+  display: grid;
+  grid-template-columns: repeat(3, 282px);
+  grid-template-rows: repeat(2, auto);
+  grid-gap: 18px;
+  margin: 0 auto 67px;
+}
+.element {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  width: 282px;
+}
+.element__icon-delete {
+  width: 18px;
+  height: 19.3px;
+  position: absolute;
+  top: 18px;
+  left: 249px;
+}
+.element__icon-delete_disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  cursor: not-allowed;
+}
+.element__icon-delete:hover {
+  opacity: 60%;
+}
+.element__imagen {
+  width: 282px;
+  height: 282px;
+  object-fit: cover;
+  margin: 0;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.element__popup-image {
+  padding: 0;
+  margin: 0;
+  width: 282px;
+  height: 282px;
+}
+.element__description {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 25px 15px 31px 21px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.element__title {
+  width: 246px;
+  font-family: "Titulos";
+  font-weight: 900;
+  font-size: 24px;
+  line-height: 29.05px;
+  color: #000;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.element__icon-like {
+  width: 21px;
+  height: 19px;
+}
+.element__icon-like_active {
+  background-image: url("../images/Megustaactivo.png");
+  width: 21px;
+  height: 19px;
+  margin: 0;
+}
+.element__icon-like:hover {
+  opacity: 50%;
+}
+.element__count-like {
+  font-family: "Subtitulos";
+  width: 9px;
+  height: 13px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #000;
+  margin: auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 880px) and (min-width: 320px) {
+  .elements {
+    width: 282px;
+    display: grid;
+    grid-template-columns: repeat(1, 282px);
+    grid-template-rows: repeat(6, 361px);
+    grid-gap: 18px;
+    margin: 0 auto 67px;
+  }
+}

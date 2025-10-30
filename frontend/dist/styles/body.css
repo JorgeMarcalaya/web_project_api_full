@@ -1,0 +1,12 @@
+html {
+  background-color: #000;
+}
+.body {
+  background-color: #000;
+}
+@media screen and (max-width: 880px) and (min-width: 320px) {
+  .page {
+    width: 320px;
+    height: 568px;
+  }
+}
