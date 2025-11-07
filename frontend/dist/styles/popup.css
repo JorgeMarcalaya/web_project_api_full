@@ -196,17 +196,23 @@
     height: 308px;
   }
   .popup__body-imagen {
-    width: 240px;
-    height: 299px;
-    margin-top: -46px;
+    width: 100%;
+    max-width: 430px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
   }
   .popup__body-title {
-    width: 240px;
+    width: 100%;
+    max-width: 430px;
     font-family: "Subtitulos";
     color: #000;
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
+    margin: 0 auto 12px;
+    text-align: left;
+    padding: 12px;
   }
   .popup__informative-img {
     width: 120px;
